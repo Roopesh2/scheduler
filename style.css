@@ -1,0 +1,126 @@
+:root {
+  --padding: 10px;
+  --text-col: #000;
+  --date-col: #fff;
+}
+
+body, html, container {
+  font-size: 20px;
+  background-color: #272727;
+  font-family: "roboto";
+  margin-left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: var(--padding);
+  padding-left: 0;
+}
+
+.week {
+  font-size: 0.48em;
+}
+.day {
+  font-size: 1.1em;
+}
+.date {
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 400;
+  min-width: 65px;
+  max-width: 100px;
+  max-height: 60px;
+  padding-top: 6px;
+  color: var(--date-col);
+  font-family: 'Montserrat';
+}
+
+.events {
+  font-size: 15px;
+  flex-grow: 10;
+  display: flex;
+  flex-direction: column;
+  flex-flow: space-between;
+  gap: var(--padding);
+}
+
+.event {
+  background-color: var(--flamingo);
+  border-radius: 13px;
+  padding: 8px;
+  padding-left: var(--padding);
+  color: var(--text-col);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event > .sub {
+  font-size: 1.0em;
+  font-weight: 500;
+  max-width: 80%;
+  background-color: #fff0;
+  padding: 5px 0 0 5px;
+  align-self: start;
+}
+
+.sub > .header {
+  margin: 0;
+  font-size: 1.135em;
+}
+
+.sub > .adds {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  max-width: 100%;
+  font-weight: 400;
+  font-size: .9em;
+  padding-left: 5px;
+  background-color: #fff0;
+}
+
+.event > .time {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+}
+
+.time > .start:after {
+  content: "";
+  position: absolute;
+  width: 1.4px;
+  height: 10px;
+  background-color: var(--text-col);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+}
+.time > .end {
+  margin-top: 1.3em;
+}
+
+ul {
+  margin: 0;
+  margin-top: 3px;
+  margin-left: -20px;
+}
+.no-arr {
+  font-size: 1.12em;
+  background-color: #fff0;
+  transform: translateX(-10px);
+  width: 107%;
+}
+.no-arr:after {
+  display: none;
+}
