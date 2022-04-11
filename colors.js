@@ -15,7 +15,7 @@ window["cols"] = {
   orange: '#ff8000'
 }
 
-window['flatui'] = {
+window['fi'] = {
   sage: '#1abc9c',
   green: '#2ecc71',
   blue: '#3498db',
@@ -37,4 +37,31 @@ window['flatui'] = {
   orange2: '#d35400',
   red2: '#c0392b',
   white2: '#bdc3c7',
+}
+
+window["gb"] = {
+  rock: '#487eb0',
+  rock2: '#40739e',
+  navy: '#273c75',
+  dark: '#353b48',
+  purple: '#9c88ff',
+  yellow: '#fbc531',
+  
+}
+window["cn"] = {
+  red: '#ff6b81',
+  green: '#2ed573',
+  green2: '#2ed573',
+  navy: '#5352ed',
+  blue: '#1e90ff'
+}
+window['nl'] = {
+  green: '#12cbc4',
+  red: '#ED4C67',
+  
+}
+
+window["fr"] = {
+  light: '#f8c291',
+  
 }

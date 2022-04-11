@@ -1,45 +1,44 @@
+const untimed = [
+  {
+    title: 'Mathematics HW',
+    remarks: `Exercise 16.1 cheyyanam`,
+    color: cols.graphite
+  },
+];
 const tomorrow = [
   {
     title: 'Mathematics assignment',
-    remarks: `Kazhinja classil (09/4 in post cheyythath) thannittulla assignments submit cheyyanam`,
+    remarks: `Kazhinja classil thannittulla assignments submit cheyyanam`,
     time: "7:00 AM",
-    color: cols.sage
+    color: nl.green
+  },
+  {
+    title: 'Chemistry note submission',
+    remarks: `Inn (11/4 in) edutha puthiya chapter (s-block elements) inte notes Gsuit classroom il ittittund. Ath ezhuthi submit cheyyanam`,
+    time: "8:00 AM",
+    color: cn.blue
   },
   {
     ign: 0,
     title: "Physics class",
-    remarks: `Revision: Motion in a straight line`,
-    time: "7:00 AM - 8:00 AM",
-    color: flatui.orange
+    remarks: ``,
+    time: "8:15 AM - 9:15 AM",
+    color: fi.green
   },
   {
     ign: 0,
     title: "Mathematics Class",
     remarks: ``,
-    time: "8:15 AM - 9:15 AM",
-    color: cols.lavender
+    time: "10:00 AM - 11:00 AM",
+    color: gb.yellow
   },
   {
     ign: 0,
     title: "Chemistry class",
     remarks: ``,
-    time: "",
-    color: flatui.blue2
+    time: "12:00 PM - 1:00 PM",
+    color: cn.red
   },
-  {
-    title: 'Physics test',
-    remarks: `
-    <ul>
-      <li>Motion in a straight line</li>
-      <li>Motion in a plane</li>
-    </ul>
-    `,
-    time: "2:00 PM - 3:15 PM",
-    color: flatui.purple
-  }
-];
-
-let overmorrow = [
   {
     title: 'Mathematics test',
     remarks: `
@@ -49,9 +48,15 @@ let overmorrow = [
     </ul>
     `,
     time: "3:00 PM - 4:15 PM",
-    col: cols.blueberry
+    color: fi.blue
+  }
+];
+
+let overmorrow = [
+  {
+    
   }
 ]
-addEvents(tomorrow, 11, 2)
-addEvents(overmorrow, 12, 3)
-theme("light")
+// addEvents(untimed, "untimed")
+addEvents(tomorrow, 12, 3)
+theme("dark")

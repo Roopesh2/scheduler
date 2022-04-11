@@ -25,7 +25,7 @@ function addEvent(evt) {
   let sub = evt.title;
   let adds = evt.remarks || "";
   let color = evt.color || cols.flamingo;
-  let time = evt.time.split('-');
+  let time = (evt.time || "").split('-');
   return `
   <div class="event" style="background-color: ${color};">
     <div class="sub ${!time.length?"untimed":""}">
@@ -51,14 +51,18 @@ function addEvent(evt) {
 }
 
 function addEvents(list, date, day) {
-  let c = `
-  <div class="container">
+  let c = "";
+  if (date != "untimed") {
+  c = `<div class="container">
     <div class="date">
       <div class="week">${week[day-1]}</div>
       <div class="day">${date}</div>
     </div>
-    <div class="events">
-  `
+    <div class="events">`;
+  } else {
+    c += `<div class="container" style="display: block;">
+    <div class="events pad-left">`
+  }
   for (var evt of list) {
     if (evt.ign) continue;
     c += addEvent(evt);
@@ -66,6 +70,7 @@ function addEvents(list, date, day) {
   document.body.innerHTML += c + `
   </div>
   </div>
+  <hr>
   `
 }
 
