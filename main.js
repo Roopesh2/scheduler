@@ -28,10 +28,9 @@ const tomorrow = [
   },
   {
     ign: 0,
-    title: "Physics Class (Rajani teacher)",
+    title: "Physics Class",
     remarks: `
-    discussing numerical problems.
-    Chapters:<ul><li>Laws Of Motion</li><li>Work Energy Power</li>
+    Going to discuss some numerical problems in the chapters:<ul><li>Laws Of Motion</li><li>Work Energy Power</li>
     </ul>`,
     time: "7:30 pm",
     color: cn.blue
