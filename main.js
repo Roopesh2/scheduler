@@ -1,45 +1,50 @@
 const untimed = [
   {
-    title: 'Mathematics HW',
-    remarks: `Exercise 16.1 cheyyanam`,
-    color: cols.graphite
+    title: 'Chemistry note submission',
+    remarks: `compounds of alkali metals`,
+    color: cols.graphite,
+    time: "10:00 PM"
   },
 ];
 const tomorrow = [
   {
     title: 'Mathematics assignment',
-    remarks: `Kazhinja classil thannittulla assignments submit cheyyanam`,
-    time: "7:00 AM",
-    color: nl.green
+    remarks: ``,
+    time: '7:00 am',
+    color: fi.orange,
   },
   {
-    title: 'Chemistry note submission',
-    remarks: `Inn (11/4 in) edutha puthiya chapter (s-block elements) inte notes Gsuit classroom il ittittund. Ath ezhuthi submit cheyyanam`,
-    time: "8:00 AM",
+    title: 'Mathematics test',
+    remarks: `Arithmetic Progression`,
+    time: '10:00 am - 11:00 am',
+    color: fi.sage,
+  },
+  {
+    ign: 1,
+    title: 'Chemistry test',
+    remarks: `s-block elements`,
+    time: "",
     color: cn.blue
   },
   {
     ign: 0,
-    title: "Physics class",
-    remarks: ``,
-    time: "8:15 AM - 9:15 AM",
-    color: fi.green
+    title: "Physics Class (Rajani teacher)",
+    remarks: `
+    discussing numerical problems.
+    Chapters:<ul><li>Laws Of Motion</li><li>Work Energy Power</li>
+    </ul>`,
+    time: "7:30 pm",
+    color: cn.blue
   },
+   {
+     ign: 1,
+     title: "chemistry class",
+     remarks: ``,
+     time: "1:45 PM - 2:45 PM",
+     color: gb.rock
+   },
   {
-    ign: 0,
-    title: "Mathematics Class",
-    remarks: ``,
-    time: "10:00 AM - 11:00 AM",
-    color: gb.yellow
-  },
-  {
-    ign: 0,
-    title: "Chemistry class",
-    remarks: ``,
-    time: "12:00 PM - 1:00 PM",
-    color: cn.red
-  },
-  {
+    ign: 1,
     title: 'Mathematics test',
     remarks: `
     <ul>
@@ -58,5 +63,5 @@ let overmorrow = [
   }
 ]
 // addEvents(untimed, "untimed")
-addEvents(tomorrow, 12, 3)
+addEvents(tomorrow, 16, 7)
 theme("dark")

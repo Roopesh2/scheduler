@@ -26,10 +26,10 @@ body, html, container {
   font-size: 0.48em;
 }
 .day {
-  font-size: 1.1em;
+  font-size: 1.08em;
 }
 .date {
-  font-size: 30px;
+  font-size: 1.3em;
   margin-bottom: 15px;
   text-align: center;
   font-weight: 400;
@@ -55,7 +55,6 @@ body, html, container {
 }
 
 .event {
-  background-color: var(--flamingo);
   border-radius: 13px;
   padding: 8px;
   padding-left: var(--padding);
@@ -69,7 +68,7 @@ body, html, container {
 .event > .sub {
   font-size: 1.0em;
   font-weight: 500;
-  max-width: 80%;
+  max-width: 100%;
   background-color: var(--debug-bg);
   padding: 5px 0 0 0;
   align-self: start;
@@ -85,11 +84,11 @@ body, html, container {
   padding: 0;
   margin: 0;
   margin-top: 5px;
-  max-width: 99%;
+  width: 100%;
   font-weight: 400;
   font-size: .9em;
   padding-left: 5px;
-    background-color: var(--debug-bg);
+  background-color: var(--debug-bg);
 }
 
 .event > .time {
