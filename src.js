@@ -22,9 +22,9 @@ themes = {
 
 
 function addEvent(evt) {
-  let sub = evt.title.replace(/\n/g, "</br>");
-  let adds = (evt.remarks || "").trim().replace(/\n/g, "</br>");
-  let color = evt.color || cols.flamingo;
+  let sub = evt.title.replace(/\\\\/g, "</br>");
+  let adds = (evt.remarks || "").trim().replace(/\\\\/g, "</br>");
+  let color = evt.color || gc.flamingo;
   let time = (evt.time || "").toUpperCase().split('-');
   let specifidHeight = !isNaN(evt.height);
   let additionalStyles =
@@ -34,7 +34,11 @@ function addEvent(evt) {
   <div class="event" style="background-color: ${color};${additionalStyles}">
     <div class="sub ${!time.length?"untimed":""}" style="${specifidHeight?'margin: 0;': ''}">
       <p class='header'>${sub}</p>
-      <div class='adds'${time[0]?.length?'':"style='width:100%;'"}>
+      <div class='adds'${
+        time[0]?.length 
+        ? ''
+        : "style='width:100%;'"
+      }>
         ${adds}
       </div>
     </div>

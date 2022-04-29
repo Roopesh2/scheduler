@@ -1,4 +1,4 @@
-window["cols"] = {
+window["gc"] = {
   tomato: "#dd5236",
   tangerine: "#e5683f",
   banana: "#e1b54f",
