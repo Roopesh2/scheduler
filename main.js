@@ -12,27 +12,27 @@ const tomorrow = [
     title: 'Mathematics note',
     remarks: ``,
     time: "7:00 am",
-    color: gc.tomato
+    color: gc
   },
   {
     ign: 0,
-    title: 'Chemistry class',
-    remarks: ``,
-    time: "7:00 am - 8:00 am",
-    color: gc.tomato
+    title: 'Physics test',
+    remarks: `System of particles and rotational motion`,
+    time: "6:50 am - 8:15 am",
+    color: fi.orange
   },
   {
     ign: 0,
-    title: "Chemistry class",
+    title: "Physics class",
     remarks: '',
-    time: '8:15 am - 9:15 am',
-    color: fi.green2
+    time: '',
+    color: fi.blue
   },
   {
-    ign: 0,
+    ign: 1,
     title: "Chemistry test",
-    remarks: ``,
-    time: "7:00 pm - 8:00 pm",
+    remarks: `Hydrocarbons`,
+    time: "7:00 pm - 8:30 pm",
     color: fi.orange
    },
    {
@@ -50,5 +50,5 @@ let overmorrow = [
   }
 ]
 // addEvents(untimed, "untimed")
-addEvents(tomorrow, 30, 7)
-theme("light")
+addEvents(tomorrow, 1, 1)
+theme("dark")
