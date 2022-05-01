@@ -16,17 +16,17 @@ const tomorrow = [
   },
   {
     ign: 0,
-    title: 'Physics test',
-    remarks: `System of particles and rotational motion`,
-    time: "6:50 am - 8:15 am",
-    color: fi.orange
+    title: 'Physics class',
+    remarks: ``,
+    time: "7:00 am - 8:00 am",
+    color: fi.sage
   },
   {
     ign: 0,
-    title: "Physics class",
+    title: "Mathematics class",
     remarks: '',
-    time: '',
-    color: fi.blue
+    time: '8:15 am - 9:15 am',
+    color: fi.yellow2
   },
   {
     ign: 1,
@@ -36,11 +36,11 @@ const tomorrow = [
     color: fi.orange
    },
    {
-    ign: 1,
+    ign: 0,
     title: "Chemistry class",
-    remarks: `Group leaders avaravarude group members in class edukkanam`,
-    time: "",
-    color: fr.light
+    remarks: ``,
+    time: "10:00 am - 11:00 am",
+    color: cn.red
    },
 ];
 
@@ -50,5 +50,5 @@ let overmorrow = [
   }
 ]
 // addEvents(untimed, "untimed")
-addEvents(tomorrow, 1, 1)
+addEvents(tomorrow, 2, 2)
 theme("dark")

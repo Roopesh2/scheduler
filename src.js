@@ -11,12 +11,12 @@ themes = {
   light: {
     "--text-col": "#fff",
     "--date-col": "#000",
-    "--bg": "#f8f8f8",
+    "--bg": "#fff", // matches the bgc of WhatsApp messages in light mode
   },
   dark: {
     "--text-col": "#000",
     "--date-col": "#fff",
-    "--bg": "#202c33",
+    "--bg": "#202c33", // matches the bgc of WhatsApp messages in dark mode
   }
 }
 
